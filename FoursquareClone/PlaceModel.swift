@@ -17,6 +17,7 @@ class PlaceModel {
     var placeImage = UIImage()
     var placeChosenLatitude : String = ""
     var placeChosenLongitude : String = ""
+    var chosenPlaceId = ""
     
     private init(){}
 }

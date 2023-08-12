@@ -13,7 +13,7 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     var placeNameArray = [String]()
     var placeIdArray = [String]()
-    
+    var selectedPlaceId = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -70,6 +70,18 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailsVC" {
+            let destinationVC = segue.destination as! DetailsVC
+            destinationVC.chosenPlaceId = selectedPlaceId
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedPlaceId = placeIdArray[indexPath.row]
+        performSegue(withIdentifier: "toDetailsVC", sender: nil)
+    }
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         cell.textLabel?.text = placeNameArray[indexPath.row]
@@ -86,4 +98,7 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         alert.addAction(okButton)
         self.present(alert, animated: true, completion: nil)
     }
+    
+    
+    
 }
