@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		77648EF12E579ABC341E03BE /* Pods_FoursquareClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BF62BC059191AA2F742519 /* Pods_FoursquareClone.framework */; };
+		CCC3A1632A86A6800096BEC5 /* AddPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC3A1622A86A6800096BEC5 /* AddPlaceVC.swift */; };
+		CCC3A1652A86B5970096BEC5 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC3A1642A86B5970096BEC5 /* MapVC.swift */; };
+		CCC3A1672A86BC9C0096BEC5 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC3A1662A86BC9C0096BEC5 /* DetailsVC.swift */; };
 		CCE012DB2A865ECC00A1BAB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE012DA2A865ECC00A1BAB7 /* AppDelegate.swift */; };
 		CCE012DD2A865ECC00A1BAB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE012DC2A865ECC00A1BAB7 /* SceneDelegate.swift */; };
 		CCE012DF2A865ECC00A1BAB7 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE012DE2A865ECC00A1BAB7 /* SignUpVC.swift */; };
@@ -15,12 +18,16 @@
 		CCE012E42A865ECE00A1BAB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE012E32A865ECE00A1BAB7 /* Assets.xcassets */; };
 		CCE012E72A865ECE00A1BAB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE012E52A865ECE00A1BAB7 /* LaunchScreen.storyboard */; };
 		CCE012EF2A868C9800A1BAB7 /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE012EE2A868C9800A1BAB7 /* PlacesVC.swift */; };
+		CCE1372E2A8778F8006A095B /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE1372D2A8778F8006A095B /* PlaceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2EC9A9D673967AC989848A7E /* Pods-FoursquareClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareClone.release.xcconfig"; path = "Target Support Files/Pods-FoursquareClone/Pods-FoursquareClone.release.xcconfig"; sourceTree = "<group>"; };
 		62BF62BC059191AA2F742519 /* Pods_FoursquareClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoursquareClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		770091767C5DB7C63D8F90F4 /* Pods-FoursquareClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareClone.debug.xcconfig"; path = "Target Support Files/Pods-FoursquareClone/Pods-FoursquareClone.debug.xcconfig"; sourceTree = "<group>"; };
+		CCC3A1622A86A6800096BEC5 /* AddPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceVC.swift; sourceTree = "<group>"; };
+		CCC3A1642A86B5970096BEC5 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		CCC3A1662A86BC9C0096BEC5 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		CCE012D72A865ECC00A1BAB7 /* FoursquareClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoursquareClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE012DA2A865ECC00A1BAB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCE012DC2A865ECC00A1BAB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +37,7 @@
 		CCE012E62A865ECE00A1BAB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCE012E82A865ECE00A1BAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCE012EE2A868C9800A1BAB7 /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
+		CCE1372D2A8778F8006A095B /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,10 @@
 				CCE012DC2A865ECC00A1BAB7 /* SceneDelegate.swift */,
 				CCE012DE2A865ECC00A1BAB7 /* SignUpVC.swift */,
 				CCE012EE2A868C9800A1BAB7 /* PlacesVC.swift */,
+				CCC3A1622A86A6800096BEC5 /* AddPlaceVC.swift */,
+				CCC3A1642A86B5970096BEC5 /* MapVC.swift */,
+				CCC3A1662A86BC9C0096BEC5 /* DetailsVC.swift */,
+				CCE1372D2A8778F8006A095B /* PlaceModel.swift */,
 				CCE012E02A865ECC00A1BAB7 /* Main.storyboard */,
 				CCE012E32A865ECE00A1BAB7 /* Assets.xcassets */,
 				CCE012E52A865ECE00A1BAB7 /* LaunchScreen.storyboard */,
@@ -210,8 +222,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCE012DF2A865ECC00A1BAB7 /* SignUpVC.swift in Sources */,
+				CCE1372E2A8778F8006A095B /* PlaceModel.swift in Sources */,
+				CCC3A1652A86B5970096BEC5 /* MapVC.swift in Sources */,
 				CCE012DB2A865ECC00A1BAB7 /* AppDelegate.swift in Sources */,
 				CCE012EF2A868C9800A1BAB7 /* PlacesVC.swift in Sources */,
+				CCC3A1672A86BC9C0096BEC5 /* DetailsVC.swift in Sources */,
+				CCC3A1632A86A6800096BEC5 /* AddPlaceVC.swift in Sources */,
 				CCE012DD2A865ECC00A1BAB7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
