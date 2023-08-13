@@ -351,6 +351,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="9ed-Hs-VO5"/>
         <segue reference="PXx-BQ-9du"/>
     </inferredMetricsTieBreakers>
     <resources>
